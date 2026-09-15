@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joly &amp; Jhon — Renovación de Votos</title>
+  <meta name="description" content="Acompáñanos a celebrar la renovación de votos de Joly & Jhon. 3 de diciembre de 2026." />
+
+  <!-- Open Graph / WhatsApp / Facebook preview -->
+  <!-- Open Graph / WhatsApp / Facebook preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Joly &amp; Jhon — Renovación de Votos" />
+  <meta property="og:description" content="Acompáñanos a celebrar la renovación de votos de Joly &amp; Jhon. 3 de diciembre de 2026." />
+  <meta property="og:image" content="https://jolyyjhon.pages.dev/og-image.jpg?v=2" />
+  <meta property="og:image:secure_url" content="https://jolyyjhon.pages.dev/og-image.jpg?v=2" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Joly &amp; Jhon - Renovación de Votos" />
+  <meta property="og:url" content="https://jolyyjhon.pages.dev/" />
+  <meta property="og:locale" content="es_ES" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Joly &amp; Jhon — Renovación de Votos" />
+  <meta name="twitter:description" content="Acompáñanos a celebrar la renovación de votos de Joly &amp; Jhon. 3 de diciembre de 2026." />
+  <meta name="twitter:image" content="https://jolyyjhon.pages.dev/og-image.jpg?v=2" />
+  <meta name="twitter:image:alt" content="Joly &amp; Jhon - Renovación de Votos" />
+
+  <!-- Fonts: script (nombres) + serif (texto) + sans (etiquetas) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ========================================================
+       MÓDULO 0 — SOBRE / PORTADA PERSONALIZADA
+       ======================================================== -->
+  <div class="envelope-overlay is-done" id="envelope-overlay" style="display:none">
+    <div class="envelope" id="envelope">
+      <!-- Capa 1: parte trasera del sobre (pantalla completa) -->
+      <div class="envelope__back"></div>
+
+      <!-- Capa 2: bolsillo frontal del sobre -->
+      <div class="envelope__front"></div>
+
+      <!-- "Destinatario" escrito sobre el sobre -->
+      <div class="envelope__address">
+        <p class="letter__eyebrow">Renovación de votos</p>
+        <p class="letter__guest">
+          <span class="letter__guest-label" id="guest-label">Querido/a(s)</span>
+          <span class="letter__guest-name" id="guest-name">Invitados</span>
+        </p>
+        <h1 class="letter__couple">Joly <span class="amp">&amp;</span> Jhon</h1>
+        <p class="letter__date">3 de diciembre de 2026</p>
+      </div>
+
+      <!-- Capa 3: solapa (gira sobre el borde superior) -->
+      <div class="envelope__flap"></div>
+
+      <!-- Capa 5: sello de cera -->
+      <button type="button" class="envelope__seal" id="envelope-seal"
+              aria-label="Abrir la invitación">
+        <img src="assets/sello.webp" alt="" width="512" height="512" decoding="async" />
+      </button>
+    </div>
+  </div>
+
+  <!-- ============ MÓDULO 1 · PORTADA ============ -->
+  <header class="hero" id="inicio">
+    <div class="floral floral--tl" aria-hidden="true"><img src="assets/trigo_izq.webp" alt=""/></div>
+    <div class="floral floral--tr" aria-hidden="true"><img src="assets/trigo_top_der.webp" alt=""/></div>
+    <div class="hero__content reveal">
+      <!-- .hero__text se "disuelve" en mobile (display: contents);
+           en desktop es la columna izquierda. -->
+      <div class="hero__text">
+        <p class="eyebrow">Renovación de Votos</p>
+        <h1 class="hero__names">Joly <span class="amp">&amp;</span> Jhon</h1>
+        <p class="hero__date">3 de diciembre de 2026</p>
+      </div>
+      <figure class="hero__photo">
+        <img src="assets/pareja.webp" alt="Joly y Jhon" width="900" height="1200"
+             loading="eager" decoding="async" />
+      </figure>
+      <!-- Historia (Módulo 2): en mobile fluye después de la fecha;
+           en desktop queda a la izquierda de la foto. -->
+      <div class="hero__story">
+        <p class="section__lead">
+          Después de <strong>14 años de matrimonio</strong> hemos decidido volver a decir sí.
+        </p>
+        <p class="section__text">
+          En el día de nuestro 15° aniversario queremos celebrar la renovación de
+          nuestros votos rodeados de las personas que más queremos.
+        </p>
+      </div>
+    </div>
+    <a class="hero__scroll" href="#concepto" aria-label="Desplázate para ver más">⌄</a>
+  </header>
+
+  <main>
+    <!-- MÓDULO 2 · HISTORIA: su texto vive ahora en el hero (.hero__story) -->
+
+    <!-- ============ MÓDULO 3 · CONCEPTO ============ -->
+    <section class="section section--tinted" id="concepto">
+      <div class="container reveal">
+        <h2 class="section__title">Una pequeña aventura</h2>
+        <div class="divider" aria-hidden="true"><span>❧</span></div>
+        <p class="section__text">
+          Hemos decidido escapar por un momento del ritmo de la ciudad y reunirnos
+          en un lugar rodeado de naturaleza.
+        </p>
+        <p class="section__text">
+          Los invitamos a vivir con nosotros esta celebración íntima con espíritu
+          <em>boho</em>, pensada como una escapada entre amigos y familia. La
+          experiencia será en un refugio natural.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ MÓDULO 2.5 · EL REFUGIO / HOSPEDAJE ============ -->
+    <section class="section section--venue" id="refugio">
+      <div class="container container--wide reveal">
+        <p class="eyebrow">Hospedaje</p>
+        <h2 class="section__title">El refugio</h2>
+        <div class="divider" aria-hidden="true"><span>❧</span></div>
+        <p class="section__text">
+          Un refugio natural con hospedaje tipo <strong>glamping</strong>,
+          rodeado de naturaleza, donde celebraremos y pasaremos la noche juntos.
+        </p>
+        <div class="venue__gallery">
+          <img src="assets/hospedaje/01.webp" alt="Vista del refugio natural" loading="lazy" decoding="async" />
+          <img src="assets/hospedaje/02.webp" alt="Espacio exterior del alojamiento" loading="lazy" decoding="async" />
+          <img src="assets/hospedaje/03.webp" alt="Detalle del alojamiento" loading="lazy" decoding="async" />
+          <img src="assets/hospedaje/04.webp" alt="Entorno natural del refugio" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MÓDULOS 4–6 · TARJETAS (Dress Code / Hospedaje / RSVP) ============
+         Mobile: apiladas · Desktop: 3 columnas lado a lado -->
+    <section class="section section--cards" id="detalles">
+      <div class="floral floral--bl" aria-hidden="true"><img src="assets/trigo_izq.webp" alt=""/></div>
+      <div class="container container--wide reveal">
+        <div class="cards">
+
+          <!-- Módulo 4 · Dress Code -->
+          <article class="card card--dress" id="dresscode">
+            <header class="card__band">
+              <p class="card__eyebrow">Dress Code</p>
+              <p class="card__script">Boho Chic</p>
+            </header>
+            <div class="card__attire" aria-hidden="true">
+              <img src="assets/suit-dress.webp" alt="Ilustración de traje y vestido boho" width="1182" height="912" loading="lazy" />
+            </div>
+            <p class="card__text">
+              Colores sugeridos: terracota, óxido, ladrillo, café, chocolate, camel, taupe, mostaza suave, azul petróleo, azul polvo, gris cálido y demás tonos tierra.
+              <br /><br />
+              Colores reservados:
+              <br />
+              • Beige y champagne: reservados para el novio.
+              <br />
+              • Verde oliva: reservado para el cortejo.
+              <br />
+              • Blanco y marfil: reservados para la novia.
+            </p>
+          </article>
+
+          <!-- Módulo 6 · Inspiración Boho Chic -->
+          <article class="card card--confirm">
+            <div class="card__floral card__floral--tl" aria-hidden="true"><img src="assets/trigo_izq.webp" alt=""/></div>
+            <div class="card__floral card__floral--tr" aria-hidden="true"><img src="assets/trigo_top_der.webp" alt=""/></div>
+            <div class="card__floral card__floral--br" aria-hidden="true"><img src="assets/trigo_top_der.webp" alt=""/></div>
+            <h2 class="card__script">Inspiración Boho Chic</h2>
+            <div class="card__inspo-options">
+              <button type="button" class="card__inspo-btn"
+                      data-modal-open="modal-dresscode"
+                      data-modal-tab="panel-mujeres">
+                <img src="assets/dresscode/mujeres/mujeres-01.webp" alt="Inspiración mujeres" loading="lazy" />
+                <span>Para mujeres</span>
+              </button>
+              <button type="button" class="card__inspo-btn"
+                      data-modal-open="modal-dresscode"
+                      data-modal-tab="panel-hombres">
+                <img src="assets/dresscode/hombres/hombres-01.webp" alt="Inspiración hombres" loading="lazy" />
+                <span>Para hombres</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Módulo 5 · Hospedaje -->
+          <article class="card" id="hospedaje">
+            <div class="card__floral card__floral--bl" aria-hidden="true"><img src="assets/trigo_izq.webp" alt=""/></div>
+            <div class="card__floral card__floral--br" aria-hidden="true"><img src="assets/trigo_top_der.webp" alt=""/></div>
+            <h2 class="card__title">Hospedaje</h2>
+            <p class="card__text">
+              Un refugio natural contará con hospedaje disponible para una
+              experiencia en la naturaleza.
+            </p>
+            <!-- Si hay link externo del lugar, añadirlo como enlace dentro del modal -->
+            <button type="button" class="btn btn--primary" data-modal-open="modal-hospedaje">
+              Ver hospedaje
+            </button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MÓDULO 6 · RSVP ============ -->
+    <section class="section" id="rsvp">
+      <div class="container reveal">
+        <h2 class="section__title">Confirma tu asistencia</h2>
+        <div class="divider" aria-hidden="true"><span>❧</span></div>
+
+        <form class="form" id="rsvp-form" data-form-type="rsvp" novalidate>
+          <div class="form__field">
+            <label for="nombre">Tu nombre</label>
+            <input type="text" id="nombre" name="nombre" required autocomplete="name" />
+          </div>
+
+          <fieldset class="form__field">
+            <legend>¿Asistirás a la celebración?</legend>
+            <div class="form__options">
+              <label class="radio"><input type="radio" name="asistencia" value="si" required /><span>Sí, ahí estaré</span></label>
+              <label class="radio"><input type="radio" name="asistencia" value="no" /><span>No podré asistir</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__field">
+            <legend>¿Necesitas hospedaje?</legend>
+            <div class="form__options">
+              <label class="radio"><input type="radio" name="hospedaje" value="si" /><span>Sí</span></label>
+              <label class="radio"><input type="radio" name="hospedaje" value="no" /><span>No</span></label>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn btn--primary">Confirmar asistencia</button>
+          <p class="form__status" id="rsvp-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <!-- MÓDULO 10 · ACOMPAÑANTES -->
+        <p class="section__note">
+          Hemos planeado una celebración íntima, por lo que la invitación está
+          destinada únicamente a las personas incluidas en este enlace.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ MÓDULO 7 · CANCIÓN ============ -->
+    <section class="section section--tinted" id="cancion">
+      <div class="container reveal">
+        <h2 class="section__title">Un toque especial</h2>
+        <div class="divider" aria-hidden="true"><span>❧</span></div>
+        <p class="section__text">
+          Queremos crear una playlist especial para la celebración y nos encantaría que añadieras tus canciones.
+        </p>
+        <a href="https://open.spotify.com/playlist/3KzZM4i6U7HEjl8FIQqbib?si=1PbtzeWyTDS7f9wfHZBC1g&amp;utm_source=copy-link&amp;pt=a19a5ec209de50063426c0f7733d45af&amp;pi=CI_aC7hSSMaYy" class="btn btn--primary" target="_blank" rel="noopener">Unirme a la playlist en Spotify</a>
+        <p class="section__note" style="margin-top:1rem;font-size:.9rem;">Abrí Spotify, unite a la playlist y agregá las canciones que no pueden faltar.</p>
+      </div>
+    </section>
+
+    <!-- ============ MÓDULO 8 · UBICACIÓN ============ -->
+    <section class="section" id="ubicacion">
+      <div class="container reveal">
+        <h2 class="section__title">Ubicación</h2>
+        <div class="divider" aria-hidden="true"><span>❧</span></div>
+
+        <div class="map">
+          <iframe
+            title="Mapa del evento"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.5431763482015!2d-59.134680700000004!3d-35.2924826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bda7a54536051d%3A0x1d90b97d9a7aa468!2sREFUGIO%20Natural%20Glamping!5e0!3m2!1sen!2sar!4v1785101603915!5m2!1sen!2sar"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+
+        <a href="https://maps.app.goo.gl/XvCeCrYupLL5ztzm9?g_st=ic" class="btn btn--outline" target="_blank" rel="noopener">Abrir en Google Maps</a>
+      </div>
+    </section>
+
+    <!-- ============ MÓDULO 9 · REGALOS ============ -->
+    <section class="section section--tinted" id="regalos">
+      <div class="container reveal">
+        <h2 class="section__title">Regalos</h2>
+        <div class="envelope-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" class="icon icon--lg"><rect x="3" y="6" width="18" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+        </div>
+        <p class="section__text">
+          Su presencia es lo más importante para nosotros. Sin embargo, si desean
+          hacernos un regalo, agradeceremos una contribución económica para
+          nuestros futuros proyectos.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ MÓDULO 11 · CIERRE + CUENTA REGRESIVA ============ -->
+    <section class="section section--olive closing" id="cierre">
+      <div class="floral floral--bottom" aria-hidden="true"><img src="assets/trigo_bottom.webp" alt=""/></div>
+      <div class="container reveal">
+        <p class="section__text">
+          Estamos muy felices de compartir este momento con ustedes.<br />
+          Gracias por acompañarnos en esta nueva aventura.
+        </p>
+        <p class="section__script">Joly &amp; Jhon</p>
+
+        <div class="countdown" id="countdown" data-target="2026-12-03T00:00:00">
+          <div class="countdown__item"><span class="countdown__num" data-unit="days">0</span><span class="countdown__label">días</span></div>
+          <div class="countdown__item"><span class="countdown__num" data-unit="hours">0</span><span class="countdown__label">horas</span></div>
+          <div class="countdown__item"><span class="countdown__num" data-unit="minutes">0</span><span class="countdown__label">min</span></div>
+          <div class="countdown__item"><span class="countdown__num" data-unit="seconds">0</span><span class="countdown__label">seg</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Hecho con amor · Joly &amp; Jhon · 2026</p>
+  </footer>
+
+  <!-- ============ MODAL · HOSPEDAJE ============
+       Componente genérico: cualquier [data-modal-open="<id>"] abre el
+       modal con ese id; [data-modal-close] lo cierra. -->
+  <div class="modal" id="modal-hospedaje" role="dialog" aria-modal="true"
+       aria-labelledby="modal-hospedaje-title" hidden>
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__dialog">
+      <button type="button" class="modal__close" data-modal-close
+              aria-label="Cerrar">✕</button>
+      <h2 class="modal__title" id="modal-hospedaje-title">El refugio</h2>
+      <p class="modal__text">
+        Así luce el lugar donde celebraremos — hospedaje en medio de la naturaleza.
+      </p>
+      <!-- Las fotos se abren en grande (lightbox) al hacer clic -->
+      <div class="modal__gallery">
+        <img src="assets/hospedaje/01.webp" alt="Vista del refugio natural" loading="lazy" />
+        <img src="assets/hospedaje/02.webp" alt="Espacio exterior del alojamiento" loading="lazy" />
+        <img src="assets/hospedaje/03.webp" alt="Detalle del alojamiento" loading="lazy" />
+        <img src="assets/hospedaje/04.webp" alt="Entorno natural del refugio" loading="lazy" />
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ MODAL · DRESS CODE ============ -->
+  <div class="modal" id="modal-dresscode" role="dialog" aria-modal="true"
+       aria-labelledby="modal-dresscode-title" hidden>
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__dialog">
+      <button type="button" class="modal__close" data-modal-close
+              aria-label="Cerrar">✕</button>
+      <h2 class="modal__title" id="modal-dresscode-title">Inspiración Boho Chic</h2>
+
+      <!-- Pestañas -->
+      <div class="tabs" role="tablist" aria-label="Sugerencias de vestimenta">
+        <button type="button" class="tabs__tab is-active" role="tab"
+                id="tab-mujeres" aria-selected="true"
+                aria-controls="panel-mujeres" data-tab="panel-mujeres">
+          Mujeres
+        </button>
+        <button type="button" class="tabs__tab" role="tab"
+                id="tab-hombres" aria-selected="false"
+                aria-controls="panel-hombres" data-tab="panel-hombres">
+          Hombres
+        </button>
+      </div>
+
+      <div class="tabs__panel" role="tabpanel" id="panel-mujeres"
+           aria-labelledby="tab-mujeres">
+        <div class="modal__gallery modal__gallery--grid">
+          <img src="assets/dresscode/mujeres/mujeres-01.webp" alt="Sugerencia de vestido boho 1" loading="lazy" />
+          <img src="assets/dresscode/mujeres/mujeres-02.webp" alt="Sugerencia de vestido boho 2" loading="lazy" />
+          <img src="assets/dresscode/mujeres/mujeres-03.webp" alt="Sugerencia de vestido boho 3" loading="lazy" />
+          <img src="assets/dresscode/mujeres/mujeres-04.webp" alt="Sugerencia de vestido boho 4" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="tabs__panel" role="tabpanel" id="panel-hombres"
+           aria-labelledby="tab-hombres" hidden>
+        <div class="modal__gallery modal__gallery--grid">
+          <img src="assets/dresscode/hombres/hombres-01.webp" alt="Sugerencia de look boho para hombre 1" loading="lazy" />
+          <img src="assets/dresscode/hombres/hombres-03.webp" alt="Sugerencia de look boho para hombre 2" loading="lazy" />
+          <img src="assets/dresscode/hombres/hombres-06.webp" alt="Sugerencia de look boho para hombre 3" loading="lazy" />
+          <img src="assets/dresscode/hombres/hombres-07.webp" alt="Inspiración de looks boho para hombre 1" loading="lazy" />
+          <img src="assets/dresscode/hombres/hombres-08.webp" alt="Inspiración de looks boho para hombre 2" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ LIGHTBOX (foto ampliada) ============
+       Se abre al hacer clic en cualquier foto de una .modal__gallery.
+       Navegación: botones, flechas del teclado y swipe táctil. -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true"
+       aria-label="Foto ampliada" hidden>
+    <div class="lightbox__overlay" data-lightbox-close></div>
+    <figure class="lightbox__stage">
+      <img class="lightbox__img" src="" alt="" />
+    </figure>
+    <button type="button" class="lightbox__close" data-lightbox-close
+            aria-label="Cerrar">✕</button>
+    <button type="button" class="lightbox__nav lightbox__nav--prev"
+            aria-label="Foto anterior">‹</button>
+    <button type="button" class="lightbox__nav lightbox__nav--next"
+            aria-label="Foto siguiente">›</button>
+  </div>
+
+  <audio id="bg-music" src="assets/willow.mp3" loop hidden aria-hidden="true" preload="auto"></audio>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
