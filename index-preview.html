@@ -30,7 +30,7 @@
   <!-- Fonts: script (nombres) + serif (texto) + sans (etiquetas) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lora:wght@600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="assets/sello.webp" type="image/webp" />
@@ -209,7 +209,7 @@
             <h2 class="card__title">Hospedaje</h2>
             <p class="card__text">
               Dos noches de alojamiento, del 3 al 5 de diciembre, por
-              <strong>USD 100 por persona</strong>.
+              <strong><span class="price">USD 100</span> por persona</strong>.
             </p>
             <!-- Si hay link externo del lugar, añadirlo como enlace dentro del modal -->
             <button type="button" class="btn btn--primary" data-modal-open="modal-hospedaje">
@@ -347,7 +347,7 @@
       <div class="modal__body modal__body--lodging">
         <p class="modal__lead">
           Para quienes deseen vivir la experiencia completa, habrá alojamiento
-          disponible por <strong>USD 100 por persona</strong>.
+          disponible por <strong><span class="price">USD 100</span> por persona</strong>.
         </p>
         <div class="modal__includes">
           <p class="modal__includes-title">La tarifa incluye:</p>
