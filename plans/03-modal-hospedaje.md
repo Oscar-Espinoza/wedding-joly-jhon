@@ -43,15 +43,14 @@ modal con ese `id`.
   <div class="modal__dialog">
     <button type="button" class="modal__close" data-modal-close
             aria-label="Cerrar">✕</button>
-    <h2 class="modal__title" id="modal-hospedaje-title">El refugio</h2>
+    <h2 class="modal__title" id="modal-hospedaje-title">Hospedaje</h2>
     <p class="modal__text">
-      Así luce el lugar donde celebraremos — hospedaje tipo glamping en
-      medio de la naturaleza.
+      Así luce el alojamiento rural disponible para los invitados.
     </p>
     <div class="modal__gallery">
-      <img src="assets/hospedaje/01.jpg" alt="Vista del glamping" loading="lazy" />
+      <img src="assets/hospedaje/01.jpg" alt="Vista del hospedaje" loading="lazy" />
       <img src="assets/hospedaje/02.jpg" alt="Interior de la tienda" loading="lazy" />
-      <img src="assets/hospedaje/03.jpg" alt="Zona exterior del refugio" loading="lazy" />
+      <img src="assets/hospedaje/03.jpg" alt="Zona exterior del hospedaje" loading="lazy" />
     </div>
   </div>
 </div>

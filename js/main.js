@@ -121,6 +121,29 @@ const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzzPHT6yL3K9o0H
   );
 })();
 
+/* Pausar la música de fondo mientras se reproduce el video del lugar. */
+(function coordinateVenueVideoAudio() {
+  const video = document.getElementById("venue-video");
+  const music = document.getElementById("bg-music");
+  if (!video || !music) return;
+
+  let shouldResumeMusic = false;
+
+  video.addEventListener("play", () => {
+    shouldResumeMusic = !music.paused;
+    if (shouldResumeMusic) music.pause();
+  });
+
+  function resumeMusic() {
+    if (!shouldResumeMusic) return;
+    shouldResumeMusic = false;
+    music.play().catch(() => {});
+  }
+
+  video.addEventListener("pause", resumeMusic);
+  video.addEventListener("ended", resumeMusic);
+})();
+
 /* ---------- 1. CUENTA REGRESIVA ---------- */
 (function countdown() {
   const el = document.getElementById("countdown");
@@ -427,7 +450,7 @@ setupForm("rsvp-form", "rsvp-status");
     returnFocus?.focus();
   }
 
-  // Abrir: clic en cualquier foto de una galería (modal o sección de refugio)
+  // Abrir: clic en cualquier foto de una galería (modal o sección del lugar)
   document.querySelectorAll(".modal__gallery, .venue__gallery").forEach((gallery) => {
     const list = [...gallery.querySelectorAll("img")];
     list.forEach((photo, i) => {

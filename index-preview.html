@@ -33,6 +33,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/sello.webp" type="image/webp" />
 </head>
 <body>
 
@@ -80,6 +81,9 @@
         <p class="eyebrow">Renovación de Votos</p>
         <h1 class="hero__names">Joly <span class="amp">&amp;</span> Jhon</h1>
         <p class="hero__date">3 de diciembre de 2026</p>
+        <p class="hero__schedule">
+          Hora de llegada 17:00 h · Comienzo de la ceremonia 17:45 h
+        </p>
       </div>
       <figure class="hero__photo">
         <img src="assets/pareja.webp" alt="Joly y Jhon" width="900" height="1200"
@@ -115,27 +119,35 @@
         <p class="section__text">
           Los invitamos a vivir con nosotros esta celebración íntima con espíritu
           <em>boho</em>, pensada como una escapada entre amigos y familia. La
-          experiencia será en un refugio natural.
+          experiencia será en un salón de campo rodeado de naturaleza.
         </p>
       </div>
     </section>
 
-    <!-- ============ MÓDULO 2.5 · EL REFUGIO / HOSPEDAJE ============ -->
-    <section class="section section--venue" id="refugio">
+    <!-- ============ MÓDULO 2.5 · LUGAR DE LA CELEBRACIÓN ============ -->
+    <section class="section section--venue" id="lugar">
       <div class="container container--wide reveal">
-        <p class="eyebrow">Hospedaje</p>
-        <h2 class="section__title">El refugio</h2>
+        <p class="eyebrow">Lugar de la celebración</p>
+        <h2 class="section__title">Las Caballerizas</h2>
         <div class="divider" aria-hidden="true"><span>❧</span></div>
         <p class="section__text">
-          Un refugio natural con hospedaje tipo <strong>glamping</strong>,
-          rodeado de naturaleza, donde celebraremos y pasaremos la noche juntos.
+          Un salón de campo en Lobos, rodeado de naturaleza, donde celebraremos
+          este momento tan especial.
         </p>
         <div class="venue__gallery">
-          <img src="assets/hospedaje/01.webp" alt="Vista del refugio natural" loading="lazy" decoding="async" />
-          <img src="assets/hospedaje/02.webp" alt="Espacio exterior del alojamiento" loading="lazy" decoding="async" />
-          <img src="assets/hospedaje/03.webp" alt="Detalle del alojamiento" loading="lazy" decoding="async" />
-          <img src="assets/hospedaje/04.webp" alt="Entorno natural del refugio" loading="lazy" decoding="async" />
+          <img src="assets/venue/exterior.webp" alt="Exterior de Las Caballerizas" width="1200" height="1579" loading="lazy" decoding="async" />
+          <img src="assets/venue/ceremonia.webp" alt="Salón de Las Caballerizas preparado para una ceremonia" width="1200" height="1043" loading="lazy" decoding="async" />
+          <img src="assets/venue/recepcion.webp" alt="Interior de Las Caballerizas preparado para una recepción" width="1200" height="1194" loading="lazy" decoding="async" />
+          <img src="assets/venue/pista-baile.webp" alt="Pista de baile de Las Caballerizas" width="722" height="709" loading="lazy" decoding="async" />
         </div>
+        <figure class="venue__video">
+          <video id="venue-video" controls playsinline preload="none"
+                 poster="assets/venue/video-preview.webp">
+            <source src="assets/venue/las-caballerizas.mp4" type="video/mp4" />
+            Tu navegador no puede reproducir este video.
+          </video>
+          <figcaption>Conocé un poco más de Las Caballerizas</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -196,8 +208,8 @@
             <div class="card__floral card__floral--br" aria-hidden="true"><img src="assets/trigo_top_der.webp" alt=""/></div>
             <h2 class="card__title">Hospedaje</h2>
             <p class="card__text">
-              Un refugio natural contará con hospedaje disponible para una
-              experiencia en la naturaleza.
+              Dos noches de alojamiento, del 3 al 5 de diciembre, por
+              <strong>USD 100 por persona</strong>.
             </p>
             <!-- Si hay link externo del lugar, añadirlo como enlace dentro del modal -->
             <button type="button" class="btn btn--primary" data-modal-open="modal-hospedaje">
@@ -270,15 +282,16 @@
 
         <div class="map">
           <iframe
-            title="Mapa del evento"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.5431763482015!2d-59.134680700000004!3d-35.2924826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bda7a54536051d%3A0x1d90b97d9a7aa468!2sREFUGIO%20Natural%20Glamping!5e0!3m2!1sen!2sar!4v1785101603915!5m2!1sen!2sar"
+            title="Mapa de Las Caballerizas en Lobos"
+            src="https://www.google.com/maps?q=Las%20Caballerizas%20Sal%C3%B3n%20de%20Bodas%20y%20Eventos%20de%20Campo%20en%20Lobos%2C%20RN205%20km%2092%2C%20Lobos%2C%20Buenos%20Aires&amp;output=embed"
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
 
-        <a href="https://maps.app.goo.gl/XvCeCrYupLL5ztzm9?g_st=ic" class="btn btn--outline" target="_blank" rel="noopener">Abrir en Google Maps</a>
+        <p class="section__text"><strong>Las Caballerizas</strong> · RN205 km 92, Lobos, Provincia de Buenos Aires</p>
+        <a href="https://www.google.com/maps?q=Las+Caballerizas+%7C+Sal%C3%B3n+de+Bodas+y+Eventos+de+Campo+en+Lobos,+RN205+km+92,+B7240+Lobos,+Provincia+de+Buenos+Aires" class="btn btn--outline" target="_blank" rel="noopener">Abrir en Google Maps</a>
       </div>
     </section>
 
@@ -307,7 +320,7 @@
         </p>
         <p class="section__script">Joly &amp; Jhon</p>
 
-        <div class="countdown" id="countdown" data-target="2026-12-03T00:00:00">
+        <div class="countdown" id="countdown" data-target="2026-12-03T17:45:00-03:00">
           <div class="countdown__item"><span class="countdown__num" data-unit="days">0</span><span class="countdown__label">días</span></div>
           <div class="countdown__item"><span class="countdown__num" data-unit="hours">0</span><span class="countdown__label">horas</span></div>
           <div class="countdown__item"><span class="countdown__num" data-unit="minutes">0</span><span class="countdown__label">min</span></div>
@@ -330,16 +343,34 @@
     <div class="modal__dialog">
       <button type="button" class="modal__close" data-modal-close
               aria-label="Cerrar">✕</button>
-      <h2 class="modal__title" id="modal-hospedaje-title">El refugio</h2>
-      <p class="modal__text">
-        Así luce el lugar donde celebraremos — hospedaje en medio de la naturaleza.
-      </p>
-      <!-- Las fotos se abren en grande (lightbox) al hacer clic -->
-      <div class="modal__gallery">
-        <img src="assets/hospedaje/01.webp" alt="Vista del refugio natural" loading="lazy" />
-        <img src="assets/hospedaje/02.webp" alt="Espacio exterior del alojamiento" loading="lazy" />
-        <img src="assets/hospedaje/03.webp" alt="Detalle del alojamiento" loading="lazy" />
-        <img src="assets/hospedaje/04.webp" alt="Entorno natural del refugio" loading="lazy" />
+      <h2 class="modal__title" id="modal-hospedaje-title">Hospedaje</h2>
+      <div class="modal__body modal__body--lodging">
+        <p class="modal__lead">
+          Para quienes deseen vivir la experiencia completa, habrá alojamiento
+          disponible por <strong>USD 100 por persona</strong>.
+        </p>
+        <div class="modal__includes">
+          <p class="modal__includes-title">La tarifa incluye:</p>
+          <ul>
+            <li>Dos noches de alojamiento.</li>
+            <li>Estadía del 3 al 5 de diciembre.</li>
+            <li>Salida el 5 de diciembre a las 10:00 h.</li>
+          </ul>
+        </div>
+        <p class="modal__note">
+          La información sobre reservas, medios de pago y organización del hospedaje
+          será compartida en el grupo de WhatsApp del evento.
+        </p>
+        <div class="modal__gallery modal__gallery--lodging" aria-label="Fotos del hospedaje">
+          <img src="assets/hospedaje/casa-principal.webp" alt="Fachada de la casa de hospedaje" width="637" height="741" loading="lazy" decoding="async" />
+          <img src="assets/hospedaje/casa-jardin.webp" alt="Casa de hospedaje vista desde el jardín" width="520" height="608" loading="lazy" decoding="async" />
+          <img src="assets/hospedaje/sala-hogar.webp" alt="Sala de estar con hogar a leña" width="343" height="344" loading="lazy" decoding="async" />
+          <img src="assets/hospedaje/sala-comedor.webp" alt="Sala y comedor del hospedaje" width="331" height="329" loading="lazy" decoding="async" />
+          <img src="assets/hospedaje/sala-principal.webp" alt="Sala principal del hospedaje" width="330" height="287" loading="lazy" decoding="async" />
+          <img src="assets/hospedaje/casa-galeria.webp" alt="Galería y parque de la casa de hospedaje" width="578" height="608" loading="lazy" decoding="async" />
+          <img src="assets/hospedaje/anexo-jardin.webp" alt="Anexo del hospedaje junto al jardín" width="329" height="327" loading="lazy" decoding="async" />
+          <img src="assets/hospedaje/el-rancho.webp" alt="Auto antiguo y cartel de El Rancho" width="531" height="619" loading="lazy" decoding="async" />
+        </div>
       </div>
     </div>
   </div>

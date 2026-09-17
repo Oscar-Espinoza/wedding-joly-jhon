@@ -370,6 +370,9 @@ img { max-width: 100%; display: block; }
     radial-gradient(ellipse at 50% 0%, rgba(217, 164, 65, 0.10), transparent 60%),
     rgba(246, 241, 231, 0.70);
 }
+/* El hero recibe foco al cerrar el sobre; evita el contorno del navegador
+   sobre este destino estructural sin ocultar focos de controles interactivos. */
+.hero[tabindex="-1"]:focus { outline: none; }
 .hero__content {
   position: relative;
   z-index: 1;
@@ -493,7 +496,7 @@ img { max-width: 100%; display: block; }
   text-align: center;
 }
 
-/* Sección "El refugio": fondo de arpillera (saco) con veladura
+/* Sección del lugar: fondo de arpillera (saco) con veladura
    color lino para mantener la legibilidad y la paleta boho. */
 .section--venue {
   background:
@@ -504,11 +507,13 @@ img { max-width: 100%; display: block; }
 .venue__gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: clamp(12rem, 55vw, 27rem);
   gap: clamp(0.6rem, 2.5vw, 1rem);
   margin-top: 1.75rem;
 }
 .venue__gallery img {
   width: 100%;
+  height: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: calc(var(--radius) / 1.5);
@@ -518,6 +523,27 @@ img { max-width: 100%; display: block; }
   transition: transform 0.3s ease;
 }
 .venue__gallery img:hover { transform: scale(1.02); }
+
+.venue__video {
+  width: min(100%, 52rem);
+  margin: 2rem auto 0;
+}
+.venue__video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 848 / 432;
+  object-fit: cover;
+  border-radius: var(--radius);
+  background: var(--color-ink);
+  box-shadow: var(--shadow-soft);
+}
+.venue__video figcaption {
+  margin-top: 0.65rem;
+  font-family: var(--font-sans);
+  font-size: var(--fs-small);
+  letter-spacing: 0.08em;
+  color: var(--color-ink-soft);
+}
 .section--tinted { background: rgba(246, 241, 231, 0.70); } /* mismo fondo y transparencia que el hero */
 .section--olive { background: rgba(86, 90, 65, 0.78); color: var(--color-linen); }
 .section--olive .section__title { color: var(--color-linen); }
@@ -1115,6 +1141,23 @@ body.modal-open { overflow: hidden; }
   flex: none;
   width: 100%;
   aspect-ratio: 3 / 4;
+  object-fit: cover;
+  scroll-snap-align: none;
+}
+
+.modal__gallery--lodging {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: clamp(8rem, 32vw, 12rem);
+  gap: 0.75rem;
+  overflow: visible;
+  scroll-snap-type: none;
+}
+.modal__gallery--lodging img {
+  flex: none;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
   object-fit: cover;
   scroll-snap-align: none;
 }
