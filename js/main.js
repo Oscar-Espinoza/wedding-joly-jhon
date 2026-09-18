@@ -295,6 +295,9 @@ function setupForm(formId, statusId) {
     }
 
     const data = Object.fromEntries(new FormData(form).entries());
+    if (formId === "rsvp-form") {
+      data.hospedaje = data.asistencia === "si" ? "si" : "no";
+    }
     data.url = window.location.pathname;
 
     const btn = form.querySelector('button[type="submit"]');
@@ -319,7 +322,7 @@ function setupForm(formId, statusId) {
   });
 }
 
-/* Formulario RSVP: envía nombre, asistencia, hospedaje
+/* Formulario RSVP: envía nombre, asistencia, hospedaje implícito
    y URL del enlace (para saber quién respondió). */
 setupForm("rsvp-form", "rsvp-status");
 
