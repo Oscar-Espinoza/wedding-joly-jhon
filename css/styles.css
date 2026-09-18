@@ -937,6 +937,30 @@ img { max-width: 100%; display: block; }
 }
 .form__actions .btn { margin-top: 0; justify-self: auto; }
 
+/* RSVP: las respuestas ocupan dos columnas equivalentes y las acciones
+   conservan ese mismo ancho, incluso en pantallas pequeñas. */
+#rsvp-form .form__options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+#rsvp-form .radio { display: flex; }
+#rsvp-form .radio span {
+  display: flex;
+  width: 100%;
+  min-height: 3.35rem;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 0.75em;
+  text-align: center;
+}
+#rsvp-form .form__actions {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  width: 100%;
+}
+#rsvp-form .form__actions .btn { width: 100%; text-align: center; }
+
 .form--inline {
   grid-template-columns: 1fr;
   background: transparent;
